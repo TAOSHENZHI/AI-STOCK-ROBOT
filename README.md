@@ -2,7 +2,7 @@
 Demo
 ----
 
-![Watch the video](https://github.com/TAOSHENZHI/AI-STOCK-ROBOT/blob/master/demo video.mp4)
+![Watch the video](https://github.com/TAOSHENZHI/AI-STOCK-ROBOT/blob/master/demo%20video.mp4)
 
 Configuration Instructions
 ----
