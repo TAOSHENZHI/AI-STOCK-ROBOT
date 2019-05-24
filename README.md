@@ -97,4 +97,4 @@ Changelog
 
 2019.5.24 upload file
 
-2019.5.24 uoload readme
+2019.5.24 upload readme
