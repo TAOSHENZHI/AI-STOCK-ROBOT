@@ -1,0 +1,424 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "Technology",
+        "synonyms": ["technology", "technlogy", "tech"]
+      },
+      {
+        "value": "Consumer Cyclical",
+        "synonyms": ["consumer cyclical", "CC"]
+      },
+      {
+        "value": "Financial Services",
+        "synonyms": ["financial services", "FS"]
+      },
+      {
+        "value": "Healthcare",
+        "synonyms": ["healthcare", "HC"]
+      },
+      {
+        "value": "stock",
+        "synonyms": ["stok"]
+      },
+      {
+        "value": "stocks",
+        "synonyms": ["stoks"]
+      },
+      {
+        "value": "mid",
+        "synonyms": ["middle"]
+      },
+      {
+        "value": "hi",
+        "synonyms": ["expensive", "valued", "high"]
+      },
+      {
+        "value": "lo",
+        "synonyms": ["cheap", "low"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "howdy", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hey there",
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hello", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hi", 
+        "intent": "greet", 
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yep", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yeah", 
+        "intent": "affirm", 
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for a stock to inquire",
+        "intent": "stock_search",
+        "entities": []
+      },
+      {
+        "text": "I want to see stock",
+        "intent": "stock_search",
+        "entities": []
+      },
+      {
+        "text": "I am searching for a stock",
+        "intent": "stock_search",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for a stock of high volume",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "hi",
+            "entity": "volume"
+          }
+        ]
+      },
+      {
+        "text": "show me technology stocks",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "Technology",
+            "entity": "sector"
+          }
+        ]
+      },
+      {
+        "text": "show me Consumer Cyclical stocks of high scale",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 25,
+            "value": "Consumer Cyclical",
+            "entity": "sector"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "value": "hi",
+            "entity": "volume"
+          }
+        ]
+      },
+      {
+        "text": "show me a middle stock of healthcare", 
+        "intent": "stock_search", 
+        "entities": [
+          {
+            "start": 26, 
+            "end": 36, 
+            "value": "Healthcare", 
+            "entity": "sector"
+          }, 
+          {
+            "start": 10, 
+            "end": 16, 
+            "value": "mid", 
+            "entity": "volume"
+          }
+        ]
+      },
+      {
+        "text": "i am looking for an low stock called olaolaolaolaolaola",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "lo",
+            "entity": "volume"
+          }
+        ]
+      },     
+      {
+        "text": "search for stocks",
+        "intent": "stock_search",
+        "entities": []
+      },
+      {
+        "text": "anyone is of Technology",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 13,
+            "end": 23,
+            "value": "Technology",
+            "entity": "sector"
+          }
+        ]
+      },
+      {
+        "text": "anyone is high",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "hi",
+            "entity": "volume"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for Financial Services stock",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 35,
+            "value": "Financial Services",
+            "entity": "sector"
+          }
+        ]
+      },
+      {
+        "text": "I am looking a stock of middle",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 30,
+            "value": "mid",
+            "entity": "volume"
+          }
+        ]
+      },
+      {
+        "text": "high tech stock",
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "hi",
+            "entity": "volume"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "value": "Technology",
+            "entity": "sector"
+          }
+        ]
+      },
+      {
+        "text": "bye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "goodbye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "good bye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "stop", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "end", 
+        "intent": "goodbye", 
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "a cheap hotel in the north",
+        "intent": "hotel_search",
+        "entities": [
+          {
+            "start": 2,
+            "end": 7,
+            "value": "cheap",
+            "entity": "price"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "north",
+            "entity": "area"
+          }
+        ]
+      },
+      {
+        "text": "an expensive hotel in the south",
+        "intent": "hotel_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 12,
+            "value": "expensive",
+            "entity": "price"
+          },
+          {
+            "start": 26,
+            "end": 31,
+            "value": "south",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "a hotel in the downtown",
+        "intent": "hotel_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "downtown",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "in the north of town",
+        "intent": "location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "north",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "in the south of town",
+        "intent": "location",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "south",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I want a mid range hotel",
+        "intent": "",
+        "entities": []
+      }
+    ]
+  }
+}
