@@ -4,8 +4,6 @@ Demo
 
 ![iamge](https://github.com/TAOSHENZHI/AI-STOCK-ROBOT/blob/master/demo.gif)
 
-[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://youtu.be/Rd7EmwfqrVE)
-
 Configuration Instructions
 ----
 
