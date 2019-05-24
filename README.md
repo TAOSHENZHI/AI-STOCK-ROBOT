@@ -2,7 +2,7 @@
 Demo
 ----
 
-![iamge](https://github.com/Liao-tianyi/stock_bot/blob/master/demo.gif)
+![Watch the video](https://github.com/TAOSHENZHI/AI-STOCK-ROBOT/blob/master/demo video.mp4)
 
 Configuration Instructions
 ----
